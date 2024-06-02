@@ -10,6 +10,16 @@ body {
   background-color: #fff;
 }
 
+/* Styling unvisited links */
+a {
+  color: #0066cc; /* Less harsh blue */
+}
+
+/* Styling visited links */
+a:visited {
+  color: #8a2be2; /* Brighter purple */
+}
+
 .post-title {
   margin-bottom: 1rem;
 }
