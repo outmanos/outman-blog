@@ -1,7 +1,23 @@
 </main>
-	
-<footer>
-	<p>&copy; {{ dateFormat "2006" now }} {{ .Site.Title }}</p>
+
+<footer style="justify-content: center; align-items: center; text-align: center;">
+
+  <a href="{{- with .Site.Params.github }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
+    <img src="/img/github.svg" style="max-height:1.5em" alt="GitHub" title="My GitHub account">
+  </a>
+
+  <a href="{{- with .Site.Params.stackoverflow }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
+    <img src="/img/stackoverflow.svg" style="max-height:1.5em" alt="StackOverflow" title="My StackOverflow">
+  </a>
+
+  <a href="/index.xml"  target="_blank" class="link-icon">
+    <img src="/img/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe to my RSS Feed">
+  </a>
+
+  <p>
+    &copy; {{ dateFormat "2006" now }} {{ .Site.Title }}
+  </p>
+
 </footer>
 
 <script>
@@ -17,4 +33,5 @@
 </script>
 
 </body>
+
 </html>

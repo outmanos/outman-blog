@@ -73,6 +73,14 @@ img {
   margin-bottom: 0.25rem;
 }
 
+/* FOOTER */
+
+.link-icon {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
 /* DARK MODE */
 
 @media (prefers-color-scheme: dark) {
