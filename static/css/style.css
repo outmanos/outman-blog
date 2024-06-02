@@ -54,6 +54,12 @@ img {
   padding-left: 0;
 }
 
+.site-nav .portfolio {
+  font-weight: bold;
+  padding-left: 0;
+  margin-left: auto;
+}
+
 .main-menu {
   display: flex;
   list-style: none;
