@@ -2,6 +2,7 @@
 title: How this blog was created
 date: 2024-05-26T17:54:56.586Z
 tags: ['Technology', 'Meta']
+authors: ['Outman']
 ---
 
 ![targets](banner.jpg)
