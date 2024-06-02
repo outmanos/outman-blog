@@ -10,6 +10,14 @@
     <img src="/img/stackoverflow.svg" style="max-height:1.5em" alt="StackOverflow" title="My StackOverflow">
   </a>
 
+  <a href="{{- with .Site.Params.linkedin }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
+    <img src="/img/linkedin.svg" style="max-height:1.5em" alt="LinkedIn" title="My LinkedIn. Hire me!">
+  </a>
+
+  <!-- <a href="{{- with .Site.Params.contact }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
+    <img src="/img/gmail.svg" style="max-height:1.5em" alt="LinkedIn" title="Contact me!">
+  </a> -->
+
   <a href="/index.xml"  target="_blank" class="link-icon">
     <img src="/img/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe to my RSS Feed">
   </a>
