@@ -20,6 +20,10 @@ a:visited {
   color: #8a2be2; /* Brighter purple */
 }
 
+#blog-title {
+  color: #e5510d;
+}
+
 .post-title {
   margin-bottom: 1rem;
 }
@@ -103,6 +107,10 @@ img {
   body {
     color: #ddd;
     background-color: #1e1e1e;
+  }
+
+  #blog-title {
+    color: #e4ff16;
   }
 
   .post-title {
