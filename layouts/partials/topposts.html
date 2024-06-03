@@ -9,10 +9,10 @@
         <a href="{{ .RelPermalink }}">
             {{ .Title }}
         </a>
-        <!-- {{- if .Param "authorsinlist" }}
+        {{- if .Param "authorsinlist" }}
         {{ with .Params.authors }} by {{ delimit . ", " " and " }}
         {{end}}
-        {{ end -}} -->
+        {{ end -}}
     </li>
     {{- end }}
 </ul>
