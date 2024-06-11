@@ -73,7 +73,7 @@ First you need to create a free Netlify account and a GitHub account if you don'
 1. Push your blog to a GitHub repository of your choosing.
 2. Click the following link: https://app.netlify.com/start/deploy?repository=https://github.com/ericmurphyxyz/hugo-starter-netlify-cms&stack=cms *(Will soon replace this with my theme)*
 3. Choose the branch you want to deploy
-
+4. You can now add your own registered domain or keep hosting it as https://your-website.netlify.app
 
 # Notes
 
