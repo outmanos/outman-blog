@@ -77,4 +77,4 @@ First you need to create a free Netlify account and a GitHub account if you don'
 
 # Notes
 
- I will thouroughly expand on this post soon.
+ I will thouroughly expand on this post soon™.
