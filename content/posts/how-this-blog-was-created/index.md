@@ -50,7 +50,7 @@ I will provide a template on my GitHub soon and update this post with a link. I 
 
 ### Development
 
-1. Clone a HUGO theme:
+1. Clone this HUGO theme:
 
     `git clone https://github.com/ericmurphyxyz/hugo-starter-netlify-cms.git`
 
