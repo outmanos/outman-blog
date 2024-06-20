@@ -56,15 +56,17 @@ I will provide a template on my GitHub soon and update this post with a link. I 
 
     *(Will soon replace this with my theme)*
 
-2. Open in your favorite text editor, like VSCode
+2. Navigate to the project folder
 3. Run the following command:
 
     `hugo server`
 
     This will deploy your website to localhost blazingly fast. You can navigate it by following the link with the exact port that should appear on the terminal.
+4. Open in your favorite text editor, like Vim or VSCode
 
+5. Now to editing:
 
-HUGO is as simple as it gets, I'm still learning to script the different pages with Go and interested in exploring shortcodes in the future but for now all you need to know is some Markdown and writing your first post under the `/content` directory. I'll leave a sample blog post as a starting example.
+    HUGO is as simple as it gets, I'm still learning to script the different pages with Go and interested in exploring shortcodes in the future but for now all you need to know is some Markdown and writing your first post under the `/content` directory. I'll leave a sample blog post as a starting example.
 
 ### Deployment
 
