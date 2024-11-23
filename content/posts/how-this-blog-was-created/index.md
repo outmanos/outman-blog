@@ -17,7 +17,7 @@ First, you need to set up HUGO for local development. I'll be providing Windows-
 You can simply follow the steps provided here:
 https://gohugo.io/installation/
 
-But if you're on Windows 11 with WinGet and Chocolatey already installed, you can simply follow the steps below.
+But if you're on Windows 11 with WinGet and Chocolatey already installed, you can simply follow the steps below. If not, you need to first check if [WinGet](https://learn.microsoft.com/en-us/windows/package-manager/winget/) [Chocolatey](https://docs.chocolatey.org/en-us/choco/setup/) are installed.
 
 ## Prerequisites
 
