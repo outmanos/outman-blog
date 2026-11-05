@@ -1,10 +1,9 @@
 ---
 title: The API client microcosm of the VC shit economy
 subtitle: But it's still somehow worth billions of dollars
-date: 2026-11-05T12:00:00.000Z
+date: 2026-11-05T05:40:00.000Z
 tags: ['Technology', 'Economy']
 authors: ['Outman']
-draft: true
 ---
 
 During my second ever job, I was working for a serious client. The client was a bank. One day I opened Postman and found myself locked out behind an account screen, with a tiny, easy-to-miss link to skip it. I eventually got my stuff back, but the experience stuck with me.
