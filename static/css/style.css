@@ -1,37 +1,101 @@
+/* THEME */
+
+:root {
+  color-scheme: light dark;
+  --bg: #fff;
+  --surface: #f4f4f4;
+  --border: #ddd;
+  --text: #333;
+  --muted: #666;
+  --heading: #222;
+  --title: #e5510d;
+  --link: #0066cc;
+  --visited: #8a2be2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --surface: #2c2c2c;
+    --border: #444;
+    --text: #ddd;
+    --muted: #aaa;
+    --heading: #eee;
+    --title: #e4ff16;
+    --link: #6cb2ff;
+    --visited: #c49bff;
+  }
+}
+
 /* LAYOUT */
 
 body {
-  color: #333;
+  color: var(--text);
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   font-size: 125%;
-  line-height: 1.5;
+  line-height: 1.6;
   max-width: 45rem;
   padding: 1rem;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: var(--bg);
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+.site-nav,
+.post-nav,
+.taglist,
+.site-footer {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading);
+  line-height: 1.25;
+}
+
+h2 {
+  margin-top: 2.5rem;
 }
 
 /* Styling unvisited links */
 a {
-  color: #0066cc; /* Less harsh blue */
+  color: var(--link);
 }
 
 /* Styling visited links */
 a:visited {
-  color: #8a2be2; /* Brighter purple */
+  color: var(--visited);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--title);
+  outline-offset: 2px;
 }
 
 #blog-title {
-  color: #e5510d;
+  color: var(--title);
 }
 
 .post-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-subtitle {
+  margin: 0 0 0.5rem;
+  font-size: 1.2em;
+  color: var(--muted);
 }
 
 .post-date {
   display: block;
   margin-bottom: 2rem;
   font-style: italic;
+  color: var(--muted);
 }
 
 .content {
@@ -40,27 +104,75 @@ a:visited {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+/* POST BODY */
+
+/* An image with a line of italics right under it is a caption */
+p > img {
+  display: block;
+  margin: 0 auto;
+}
+
+p > img + em {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--muted);
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid var(--title);
+  color: var(--muted);
+}
+
+code {
+  font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  background-color: var(--surface);
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.4;
+  border-radius: 4px;
+  background-color: var(--surface);
+}
+
+pre code {
+  padding: 0;
+  background: none;
 }
 
 /* NAVIGATION */
 
 .site-nav {
   display: flex;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background-color: var(--surface);
 }
 
-.site-nav a {
+.site-nav a,
+.site-nav a:visited {
   display: block;
   padding: 1rem;
+  color: var(--text);
 }
 
 .site-nav .logo {
   font-weight: bold;
-  padding-left: 10px;
 }
 
 .site-nav .portfolio {
   font-weight: bold;
-  padding-left: 0;
   margin-left: auto;
 }
 
@@ -72,14 +184,21 @@ img {
 }
 
 @media screen and (max-width: 48rem) {
+  body {
+    font-size: 112.5%;
+  }
+
   .site-nav,
   .main-menu {
     flex-direction: column;
   }
 
   .site-nav a {
-    padding: 0.5rem;
-    padding-left: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .site-nav .portfolio {
+    margin-left: 0;
   }
 }
 
@@ -93,7 +212,41 @@ img {
   margin-bottom: 0.25rem;
 }
 
+/* POST FOOTER */
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  font-size: 0.85em;
+}
+
+.post-nav a {
+  max-width: 45%;
+}
+
+.next-post {
+  margin-left: auto;
+  text-align: right;
+}
+
+.taglist {
+  margin-top: 2rem;
+  font-size: 0.85em;
+  text-align: center;
+}
+
 /* FOOTER */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85em;
+  text-align: center;
+  color: var(--muted);
+}
 
 .link-icon {
   margin-right: 0.5rem;
@@ -101,51 +254,13 @@ img {
   text-decoration: none;
 }
 
-/* DARK MODE */
+.link-icon img {
+  max-height: 1.5em;
+}
 
+/* The GitHub icon is black */
 @media (prefers-color-scheme: dark) {
-  body {
-    color: #ddd;
-    background-color: #1e1e1e;
-  }
-
-  #blog-title {
-    color: #e4ff16;
-  }
-
-  .post-title {
-    color: #ddd;
-  }
-
-  .post-date {
-    color: #aaa;
-  }
-
-  .content {
-    color: #ddd;
-  }
-
-  .site-nav {
-    background-color: #2c2c2c;
-  }
-
-  .site-nav a {
-    color: #ddd;
-  }
-
-  .site-nav .logo {
-    color: #fff;
-  }
-
-  .main-menu {
-    background-color: #2c2c2c;
-  }
-
-  .post-snippet {
-    color: #ddd;
-  }
-
-  .post-snippet h3 {
-    color: #ddd;
+  .link-icon img[src*="github"] {
+    filter: invert(1);
   }
 }

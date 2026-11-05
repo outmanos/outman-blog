@@ -1,25 +1,31 @@
 </main>
 
-<footer style="justify-content: center; align-items: center; text-align: center;">
+<footer class="site-footer">
 
-  <a href="{{- with .Site.Params.github }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
-    <img src="/img/github.svg" style="max-height:1.5em" alt="GitHub" title="My GitHub account">
+  {{- with .Site.Params.github }}
+  <a href="{{ . }}" target="_blank" rel="noopener" class="link-icon">
+    <img src="/img/github.svg" alt="GitHub" title="My GitHub account">
   </a>
+  {{- end }}
 
-  <a href="{{- with .Site.Params.stackoverflow }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
-    <img src="/img/stackoverflow.svg" style="max-height:1.5em" alt="StackOverflow" title="My StackOverflow">
+  {{- with .Site.Params.stackoverflow }}
+  <a href="{{ . }}" target="_blank" rel="noopener" class="link-icon">
+    <img src="/img/stackoverflow.svg" alt="StackOverflow" title="My StackOverflow">
   </a>
+  {{- end }}
 
-  <a href="{{- with .Site.Params.linkedin }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
-    <img src="/img/linkedin.svg" style="max-height:1.5em" alt="LinkedIn" title="My LinkedIn. Hire me!">
+  {{- with .Site.Params.linkedin }}
+  <a href="{{ . }}" target="_blank" rel="noopener" class="link-icon">
+    <img src="/img/linkedin.svg" alt="LinkedIn" title="My LinkedIn. Hire me!">
   </a>
+  {{- end }}
 
   <!-- <a href="{{- with .Site.Params.contact }}{{ . }}{{ end -}}" target="_blank" class="link-icon">
-    <img src="/img/gmail.svg" style="max-height:1.5em" alt="LinkedIn" title="Contact me!">
+    <img src="/img/gmail.svg" alt="LinkedIn" title="Contact me!">
   </a> -->
 
   <a href="/index.xml"  target="_blank" class="link-icon">
-    <img src="/img/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe to my RSS Feed">
+    <img src="/img/rss.svg" alt="RSS Feed" title="Subscribe to my RSS Feed">
   </a>
 
   <p>
