@@ -189,8 +189,33 @@ started:   2026-11-05T02:05:18Z
 allowed:   true
 ```
 
+#### Quick update
 
-Telemetry aside, what came next was funding.
+I launched Bruno today, and it managed to download its latest update with the telemetry toggle.
+
+So, a few thoughts:
+
+I'm less pissy about the prominent and colorful "💎 Try Bruno Ultimate" link at the bottom of the window, but when I hover over it, a tooltip reads "No Credit Card Required" and that just takes me back to the 2000s era of vaporware... Weird. And I'm not saying that developers shouldn't ask for donations or have these sorts of income streams, but what I am saying is that I'm more willing to support projects that aren't so obnoxiously in-your-face about it.
+
+What I'm really upset about is that this is what I got when I tried to turn off telemetry:
+
+![Bruno 4.3.0's "Disable Anonymous Analytics?" modal, with a highlighted "Keep Telemetry Enabled" button above a small "Disable Anyway" link, and rows of us.i.posthog.com connections in Portmaster underneath](bruno-really-wants-them-telemetrys-test-2026-11-05.jpg)
+*Bruno 4.3.0's telemetry modal on top of Portmaster's connection log (my screenshot, November 5, 2026).*
+
+Unlike the update toggle, which I can freely untoggle without Bruno begging me to reconsider because "security vulnerabilities!" "Please stay safe and up-to-date!" (more valid concerns for this kind of app, in my opinion), this one has a whole designed modal that begs you to stay. So not only is it opt-out, it's a four-click opt-out. Wunderbar.
+
+You can see at the bottom of the screenshot some of the requests from a single launch, as recorded by Portmaster. 64 total connection attempts. It reaaaaaaally wants to send that telemetry. They really want to show the world that [4M people](https://www.usebruno.com) are using the app!!
+
+I untoggled both updates and telemetry, closed the app, deleted its profile entirely from Portmaster, then relaunched it, and it was still trying to send requests:
+
+![Portmaster listing appinfo.usebruno.com and us.i.posthog.com for Bruno, above Bruno 4.3.0's preferences with software updates and telemetry both switched off](bruno-after-disabling-both-telemetry-and-app-updates-test-2026-11-05.jpg)
+*The same domains after turning both off (my screenshot, November 5, 2026).*
+
+So I can corroborate user complaints on even the latest version of the app, v4.3.0 as of the writing of this post.
+
+I have a feeling that the people behind Bruno are borrowing from [the book of Sony](https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit) by redefining terms like offline and telemetry.
+
+Now telemetry aside, what came next was the funding.
 
 To be precise, Anoop didn't initially promise that Bruno would never accept any money. In his [long-term vision post](https://github.com/usebruno/bruno/discussions/269), published on October 1, 2023, the list of things he didn't want to do began with ["We don't want to raise VC funding"](https://github.com/usebruno/bruno/discussions/269).
 
@@ -222,7 +247,7 @@ The homepage still says ["No cloud sync. No account. No login."](https://www.use
 
 I couldn't independently verify the board arrangements, the terms of the investment or its exact closing date.
 
-I consider this the second broken promise. And by now, the pattern was becoming rather familiar... My initial cynicism saved me from a third award! Not that feeling vindicated about this feels any good. I wish it wasn't the case, as Bruno looks rather pretty, for the most part. I'm less pissy about the prominent and colorful "💎 Try Bruno Ultimate" link at the bottom of the window, but when I hover over it, a tooltip reads "No Credit Card Required" and that just takes me back to the 2000s era of vaporware... Weird. And I'm not saying that developers shouldn't ask for donations or have these sorts of income streams, but what I am saying is that I'm more willing to support projects that aren't so obnoxiously in-your-face about it.
+I consider this the second broken promise. And by now, the pattern was becoming rather familiar... My initial cynicism saved me from a third award! Not that feeling vindicated about this feels any good. I wish it wasn't the case, as Bruno looks rather pretty, for the most part (see my vaporware comment).
 
 That slight tangent aside, I wasn't the only one who noticed. A Hacker News commenter pointed out that Bruno was now VC-backed, ["even after they said they would never raise money"](https://news.ycombinator.com/item?id=50357869).
 
