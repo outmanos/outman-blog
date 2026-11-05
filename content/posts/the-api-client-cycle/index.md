@@ -14,7 +14,7 @@ This article follows API clients: Postman, Insomnia, Insomnium and Bruno, in rou
 
 Also, apologies in advance for how much Hacker News is going to feature in this post. I'm a chronic HN browser. Hopefully some of you can relate. You know, the alone coffee break, or that first coffee in the morning after checking your emails and inevitably ending up on HN.
 
-I also further apologize for the upcoming silly chapter names, the first one of which should be read like a 70s mecha anime title.
+I also further apologize for the upcoming silly chapter names, the first one of which should be read like the title of a 70s tokusatsu show.
 
 ## Chapter 1: The Highly Valuable But Barely Usable Postman
 
@@ -222,11 +222,9 @@ The homepage still says ["No cloud sync. No account. No login."](https://www.use
 
 I couldn't independently verify the board arrangements, the terms of the investment or its exact closing date.
 
-I consider this the second broken promise. And by now, the pattern was becoming rather familiar... My initial cynicism saved me from a third award! Not that feeling vindicated about this feels any good. I wish it wasn't the case, as Bruno looks rather pretty.
+I consider this the second broken promise. And by now, the pattern was becoming rather familiar... My initial cynicism saved me from a third award! Not that feeling vindicated about this feels any good. I wish it wasn't the case, as Bruno looks rather pretty, for the most part. I'm less pissy about the prominent and colorful "💎 Try Bruno Ultimate" link at the bottom of the window, but when I hover over it, a tooltip reads "No Credit Card Required" and that just takes me back to the 2000s era of vaporware... Weird. And I'm not saying that developers shouldn't ask for donations or have these sorts of income streams, but what I am saying is that I'm more willing to support projects that aren't so obnoxiously in-your-face about it.
 
-I'm less pissy about the prominent "💎 Try Bruno Ultimate" link at the bottom of the window, but when I hover over it, a tooltip reads "No Credit Card Required" and that just takes me back to the 2000s vaporware... Weird.
-
-I wasn't the only one who noticed. A Hacker News commenter pointed out that Bruno was now VC-backed, ["even after they said they would never raise money"](https://news.ycombinator.com/item?id=50357869).
+That slight tangent aside, I wasn't the only one who noticed. A Hacker News commenter pointed out that Bruno was now VC-backed, ["even after they said they would never raise money"](https://news.ycombinator.com/item?id=50357869).
 
 In the high speed of the internet age, it's most definitely already corny to say, but...
 
