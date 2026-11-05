@@ -4,14 +4,16 @@
       {{ .Site.Title }}
     </a>
     <ul class="main-menu">
-      {{ range.Site.Menus.main }}
+      {{ range .Site.Menus.main }}
       <li>
         <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>
-    <a class="portfolio" href="{{ .Site.Params.portfolio }}" target="_blank">
+    {{- with .Site.Params.portfolio }}
+    <a class="portfolio" href="{{ . }}" target="_blank" rel="noopener">
       Portfolio
     </a>
+    {{- end }}
   </nav>
 </header>

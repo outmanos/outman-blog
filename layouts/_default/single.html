@@ -1,7 +1,8 @@
 {{ partial "header.html" . }}
 
 <h1 class="post-title">{{ .Title }}</h1>
-<span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+{{ with .Params.subtitle }}<p class="post-subtitle">{{ . }}</p>{{ end }}
+<span class="post-date">{{ .Date.Format "January 2, 2006" }}{{ if eq .Section "posts" }} · {{ .ReadingTime }} min read{{ end }}</span>
 
 {{ if .Params.image }}
 	<img src="{{ .Params.image }}" >
