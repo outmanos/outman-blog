@@ -146,7 +146,7 @@ The commenter wasn't having it:
 
 >["Fully offline means fully offline."](https://news.ycombinator.com/item?id=37824688)
 
-And honestly, I agree.
+And frankly, I agree.
 
 If an application claims to be fully offline but phones home every day without giving you a way to stop it, I don't think calling it offline is particularly honest. It doesn't matter much whether the ping is anonymous or how little data it sends. The network connection is still there.
 
