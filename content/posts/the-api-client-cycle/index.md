@@ -189,7 +189,7 @@ started:   2026-11-05T02:05:18Z
 allowed:   true
 ```
 
-#### Quick update
+### Quick update
 
 I launched Bruno today, and it managed to download its latest update with the telemetry toggle.
 
@@ -214,6 +214,11 @@ I untoggled both updates and telemetry, closed the app, deleted its profile enti
 So I can corroborate user complaints on even the latest version of the app, v4.3.0 as of the writing of this post.
 
 I have a feeling that the people behind Bruno are borrowing from [the book of Sony](https://consumerrights.wiki/w/Sony_PlayStation_digital_game_ownership_lawsuit) by redefining terms like offline and telemetry.
+<br>
+
+---
+
+<br>
 
 Now telemetry aside, what came next was the funding.
 
